@@ -1,3 +1,9 @@
-name
 server:
   port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/sakila
+    data-username: root
+    password: Lixu198511.,
