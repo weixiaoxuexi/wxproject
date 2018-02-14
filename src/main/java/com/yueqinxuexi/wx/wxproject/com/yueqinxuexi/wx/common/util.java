@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class util {
     // 定义基础的token信息，用于开发者验证
     private static String TOKEN = "helloqin";
-    private static byte[] HEX_DIGITS = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+    private static char[] HEX_DIGITS = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
     private static Logger log = LoggerFactory.getLogger(util.class);
 

@@ -17,14 +17,12 @@ public class WxController {
     public String checkSignature(@RequestParam(name = "signature", required = false) String signature,
                                  @RequestParam(name = "timestamp", required = false) String timestamp,
                                  @RequestParam(name = "nonce", required = false) String nonce,
-                                 @RequestParam(name = "echostr", required = false) String echostr
-    ) {
+                                 @RequestParam(name = "echostr", required = false) String echostr) {
         String result = null;
-        if(util.checkSignature(signature,timestamp,nonce)){
+        if (util.checkSignature(signature, timestamp, nonce)) {
             LOG.info("验证成功");
             result = echostr;
-        }
-        else {
+        } else {
             LOG.info("验证失败");
         }
         return result;
